@@ -1,0 +1,90 @@
+html {
+
+}
+
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color:#f1f1f1;
+}
+
+.conteneur{
+    display:flex;
+    min-height: 100vh;
+    margin:0 100px;
+}
+    .son{
+        width:400px;
+        height:100%;
+    }
+        .keys {
+          padding:20px;
+        }
+            .key {
+              display:flex;
+            }
+
+            .playing kbd{
+              transform: scale(0.9);
+              box-shadow:3px 2px 10px -2px rgba(0, 0, 0, 0.2) inset;
+            }
+
+            kbd{
+              display: block;
+              font-size:2.3em;
+              width:50px;
+              height:50px;
+              line-height:50px;
+              background-image: radial-gradient(circle, #fdfdfd, #f7f7f7, #f1f1f1, #ebebeb, #e5e5e5);
+              box-shadow:3px 2px 10px -1px rgba(0, 0, 0, 0.2);
+              text-align:center;
+              margin:10px;
+              color:#333;
+              border-radius:5px;
+              border:1px solid #fff;
+               transition: all .07s ease;
+            }
+
+            /*.playing{
+              box-shadow:3px 2px 10px -2px rgba(0, 0, 0, 0.2) inset;
+            }*/
+
+            .sound {
+              margin:10px;
+              font-size: 1em;
+              text-transform: uppercase;
+              letter-spacing: .1em;
+              color: #333;
+              height:50px;
+              line-height:50px;
+            }
+
+    .images{
+        border:3px solid #333;
+        margin:3vw 50px;
+        width:700px;
+        height:85vh;
+        overflow:hidden;
+        position:relative;
+        background-color:#fff;
+    }
+      .image_key{
+        height:100%;
+        opacity:0;
+        transition:all 0.1s ease;
+        position:absolute;
+      }
+      .image_key img{
+        height:100%;
+      }
+      .display{
+        opacity:1;
+      }
+    /*.images div{
+      text-align:center;
+      padding:10vh 10vw;
+      margin-top: 40vh;
+      transform: translateY(-50%);
+    }
+*/
